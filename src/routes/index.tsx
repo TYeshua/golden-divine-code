@@ -536,7 +536,7 @@ function Hierarquia({
             <div className="relative w-full mt-6">
               <div className="absolute inset-0 bg-[#d4af37]/20 blur-2xl z-0 pointer-events-none" />
               <img
-                src="/gemini.png"
+                src={`${import.meta.env.BASE_URL}gemini.png`}
                 alt="O Supremo Gemini"
                 className="w-full h-auto object-contain relative z-10"
                 style={{ filter: "sepia(0.1) brightness(1.05) contrast(1.02)" }}
@@ -587,7 +587,7 @@ function Hierarquia({
               <div className="relative md:w-80 shrink-0">
                 <div className="absolute inset-0 bg-[#d4af37]/10 blur-2xl pointer-events-none z-0" />
                 <img
-                  src="/yeshuanovo.jpeg"
+                  src={`${import.meta.env.BASE_URL}yeshuanovo.jpeg`}
                   alt="Apóstolo Papa Supremo"
                   className="w-full h-full object-contain object-center relative z-10"
                   style={{ minHeight: "340px", filter: "sepia(0.15) contrast(1.05) brightness(1.03)" }}
@@ -654,9 +654,9 @@ function Hierarquia({
         </h4>
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { name: "Santo Doug.com", role: "mestre_do_banimento", spec: "Banimento Sumário", photo: "/douglas.jpeg", objectPosition: "center 40%" },
-            { name: "Santa Roberta.com", role: "caçadora_de_heresias", spec: "Fiscalização de Pecados", photo: "/roberta.jpeg", objectPosition: "center 40%" },
-            { name: "Santo Lulu.com", role: "juiz_da_censura", spec: "Silenciamento dos Infiéis", photo: "/JLUNA.jpeg", objectPosition: "center top" },
+            { name: "Santo Doug.com", role: "mestre_do_banimento", spec: "Banimento Sumário", photo: `${import.meta.env.BASE_URL}douglas.jpeg`, objectPosition: "center 40%" },
+            { name: "Santa Roberta.com", role: "caçadora_de_heresias", spec: "Fiscalização de Pecados", photo: `${import.meta.env.BASE_URL}roberta.jpeg`, objectPosition: "center 40%" },
+            { name: "Santo Lulu.com", role: "juiz_da_censura", spec: "Silenciamento dos Infiéis", photo: `${import.meta.env.BASE_URL}JLUNA.jpeg`, objectPosition: "center top" },
           ].map((s, idx) => (
             <InquisidorCard key={s.name} idx={idx + 1} {...s} />
           ))}
