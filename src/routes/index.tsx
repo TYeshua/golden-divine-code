@@ -285,7 +285,7 @@ function MembroModal({
 }
 
 /* ──────────────────── MAIN INDEX ──────────────────── */
-function Index() {
+export function Index() {
   const [membros, setMembros] = useState<Membro[]>([]);
   const [totalMembros, setTotalMembros] = useState(0);
   const [showModal, setShowModal] = useState(false);
